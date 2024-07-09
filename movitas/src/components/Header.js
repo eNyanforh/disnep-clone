@@ -18,10 +18,10 @@ const Header = (props) => {
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
-      if (user) {
-        setUser(user);
-        history.push("/home");
-      }
+        if (user) {
+            setUser(user);
+            history.push("/home");
+        }
     });
   }, [userName]);
 
