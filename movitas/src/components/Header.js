@@ -10,6 +10,8 @@ import {
   setSignOutState,
 } from "../feautures/users/userSlice";
 
+import { Link } from 'react-router-dom'
+
 const Header = (props) => {
   const dispatch = useDispatch();
   const history = useHistory();
@@ -67,7 +69,7 @@ const Header = (props) => {
       ) : (
         <>
           <NavMenu>
-            <a href="/home">
+            <a href='/home'>
               <img src="/images/home-icon.svg" alt="HOME" />
               <span>HOME</span>
             </a>
